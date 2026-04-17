@@ -206,20 +206,6 @@ SELECT * FROM PROJECT;
 
 ---
 
-## 🗄️ H2 Database Console
-
-Open in browser:  
-`http://localhost:8080/h2-console`
-
-Login settings:  
-- JDBC URL: `jdbc:h2:mem:testdb`  
-- User: `sa`  
-- Password: *(leave blank)*
-
-Query example:  
-`SELECT * FROM PROJECT;`
-
----
 
 
 
