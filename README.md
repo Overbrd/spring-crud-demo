@@ -13,6 +13,51 @@ A clean, lightweight Spring Boot REST API demonstrating CRUD operations, an in�
 
 ---
 
+## 🧩 How This Project Uses Java
+
+This application is built entirely with modern Java (JDK 17+), taking advantage of the language’s strong typing, object‑oriented design, and mature ecosystem. Java powers every layer of the project:
+
+- **Model Layer (Java Classes)**  
+  The `Project` entity is a plain Java object (POJO) representing application data.  
+  Java’s class structure makes it easy to define fields, constructors, and validation rules.
+
+- **Service Layer (Business Logic)**  
+  Java interfaces and classes organize the core logic that processes incoming requests, updates data, and enforces rules.  
+  This keeps the code clean, testable, and modular.
+
+- **Repository Layer (Spring Data JPA)**  
+  Java generics and interfaces allow the repository to automatically generate CRUD operations without writing SQL.  
+  Spring Boot uses Java annotations to wire everything together.
+
+- **Controller Layer (REST Endpoints)**  
+  Java annotations like `@RestController`, `@GetMapping`, and `@PostMapping` expose clean, readable REST endpoints.  
+  Java handles JSON serialization automatically through Jackson.
+
+- **Application Bootstrap**  
+  The main class uses Java’s entry‑point method `public static void main(String[] args)` to launch the Spring Boot runtime.
+
+In short, Java provides the structure, safety, and clarity that make this project easy to maintain and extend.
+
+---
+
+## 📘 Spring CRUD Demo — Overview
+
+### 🏷️ Title Bar  
+**🧱 Spring CRUD Demo — Java + Spring Boot + H2 Database**
+
+### 📄 Details  
+- **Language:** Java (JDK 17+)  
+- **Framework:** Spring Boot  
+- **Database:** H2 in‑memory SQL database  
+- **Architecture:** Controller → Service → Repository → Model  
+- **Build Tool:** Maven Wrapper (`mvnw`)  
+- **Purpose:** Demonstrates clean, modern Java backend development for portfolio and recruiter review  
+- **Runtime:** Windows, macOS, Linux (this README focuses on Windows setup)  
+
+This title bar gives recruiters an instant snapshot of the tech stack and purpose of the project.
+
+---
+
 ## 🧰 Software Required (Windows)
 
 1. **Java Development Kit (JDK 17 or higher)**  
