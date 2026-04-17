@@ -1,5 +1,5 @@
 # Spring CRUD Demo
-A clean, lightweight Spring Boot REST API demonstrating CRUD operations, an in‑memory H2 database, and a simple service/repository architecture. This project is designed as a backend demo for developer portfolios and technical recruiters evaluating Java/Spring proficiency.
+A clean, lightweight Spring Boot REST API demonstrating CRUD operations, an in‑memory H2 database, and a simple service/repository architecture. This project is designed as a backend demo of Java/Spring proficiency.
 
 ---
 
