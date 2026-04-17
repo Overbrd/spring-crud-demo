@@ -53,8 +53,6 @@ In short, Java provides the structure, safety, and clarity that make this projec
 - **Purpose:** Demonstrates clean, modern Java backend development for portfolio and recruiter review  
 - **Runtime:** Windows, macOS, Linux (this README focuses on Windows setup)  
 
-This title bar gives recruiters an instant snapshot of the tech stack and purpose of the project.
-
 ---
 
 ## 🧰 Software Required (Windows)
