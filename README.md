@@ -128,27 +128,81 @@ Expected output:
 
 ---
 
-## 🌐 API Endpoints
+## 🌐 API Endpoints (Postman‑Ready)
 
-Postman or similar settings to test:   
+Use Postman, Insomnia, or any REST client to test the API.
 
-Base URL:  
-`http://localhost:8080/api/projects`
+**Base URL:**  
+http://localhost:8080/api/projects
 
-- GET all projects  
-  `GET /api/projects`
+---
 
-- POST create a project  
-  `POST /api/projects`  
-  Headers: Content-Type: application/json  
-  Example body:  
-  `{ "name": "Portfolio Tracker", "description": "Tracks projects for my dev portfolio", "status": "IN_PROGRESS" }`
+### 🟦 GET — Retrieve all projects
+**Method:** GET  
+**URL:** `/api/projects`
 
-- PUT update a project  
-  `PUT /api/projects/{id}`
+Returns an array of all stored projects.
 
-- DELETE a project  
-  `DELETE /api/projects/{id}`
+---
+
+### 🟩 POST — Create a new project
+**Method:** POST  
+**URL:** `/api/projects`
+
+**Headers:**  
+Content-Type: application/json
+
+**Body (raw JSON):**  
+{ "name": "Portfolio Tracker", "description": "Tracks projects for my dev portfolio", "status": "IN_PROGRESS" }
+
+**Expected Response:**  
+A JSON object containing the newly created project with an assigned `id`.
+
+---
+
+### 🟧 PUT — Update an existing project  
+**IMPORTANT:** PUT requests *must* include both:  
+- A valid JSON body  
+- The header `Content-Type: application/json`  
+Otherwise Spring Boot returns **415 Unsupported Media Type**.
+
+**Method:** PUT  
+**URL:** `/api/projects/{id}`  
+Example: `/api/projects/1`
+
+**Headers:**  
+Content-Type: application/json
+
+**Body (raw JSON):**  
+{ "name": "Portfolio Tracker", "description": "Updated description", "status": "COMPLETE" }
+
+**Expected Response:**  
+The updated project object with the same `id`.
+
+---
+
+### 🟥 DELETE — Remove a project
+**Method:** DELETE  
+**URL:** `/api/projects/{id}`  
+Example: `/api/projects/1`
+
+**Expected Response:**  
+204 No Content
+
+---
+
+### 🗄️ H2 Database Console
+**URL:**  
+http://localhost:8080/h2-console
+
+**Login Settings:**  
+JDBC URL: `jdbc:h2:mem:testdb`  
+User: `sa`  
+Password: *(leave blank)*
+
+**Example Query:**  
+SELECT * FROM PROJECT;
+
 
 ---
 
