@@ -42,7 +42,6 @@ In short, Java provides the structure, safety, and clarity that make this projec
 
 ## 📘 Spring CRUD Demo — Overview
 
-### 🏷️ Title Bar  
 **🧱 Spring CRUD Demo — Java + Spring Boot + H2 Database**
 
 ### 📄 Details  
